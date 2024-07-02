@@ -1,0 +1,75 @@
+---
+restaurant:
+  name: The Perfect Plate
+  website: 
+  email: [info@perfectplate.com](mailto:info@perfectplate.com)
+  phone: +27 12 345 2388
+
+menu:
+  starters:
+    - name: Bruschetta
+      price: 50.00
+      description: Grilled bread with fresh tomatoes and basil
+    - name: Chicken Wings
+      price: 70.00
+      description: Crispy fried chicken wings with a side of tangy sauce
+    - name: Fried Calamari
+      price: 60.00
+      description: Crispy fried squid rings served with a side of lemon aioli
+    - name: Caprese Salad
+      price: 55.00
+      description: Fresh mozzarella, tomato, and basil salad with a balsamic glaze
+    - name: Meatballs
+      price: 65.00
+      description: Homemade meatballs served in a rich tomato sauce
+
+  mains:
+    - name: Grilled Steak
+      price: 180.00
+      description: Tender grilled steak served with a side of roasted vegetables
+    - name: Pan-Seared Chicken
+      price: 120.00
+      description: Juicy chicken breast seared to perfection and served with a side of mashed potatoes
+    - name: Seafood Pasta
+      price: 150.00
+      description: Fresh seafood tossed in a garlic and herb infused pasta
+    - name: Burgers
+      price: 90.00
+      description: Juicy beef or chicken burgers served with a side of fries
+    - name: Vegetarian Lasagna
+      price: 100.00
+      description: Layers of pasta, ricotta, and vegetables baked to perfection
+
+  drinks:
+    - name: Soft Drink
+      price: 20.00
+      description: Various flavors of soft drinks available
+    - name: Craft Beer
+      price: 40.00
+      description: Selection of locally brewed craft beers
+    - name: Wine
+      price: 60.00
+      description: Various red, white, and sparkling wines available
+    - name: Coffee
+      price: 25.00
+      description: Espresso, cappuccino, or latte made from locally roasted beans
+    - name: Fresh Juice
+      price: 30.00
+      description: Various flavors of freshly squeezed juices available
+
+  desserts:
+    - name: Tiramisu
+      price: 40.00
+      description: Ladyfingers soaked in coffee liqueur layered with mascarpone cheese
+    - name: Cheesecake
+      price: 45.00
+      description: Creamy cheesecake with a graham cracker crust and mixed berry compote
+    - name: Chocolate Lava Cake
+      price: 50.00
+      description: Warm chocolate cake oozing with chocolate sauce
+    - name: Fruit Salad
+      price: 35.00
+      description: Seasonal fruit salad served with a dollop of whipped cream
+    - name: Brownies
+      price: 30.00
+      description: Rich and fudgy brownies served with a scoop of vanilla ice cream

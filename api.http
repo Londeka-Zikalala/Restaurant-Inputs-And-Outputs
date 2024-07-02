@@ -1,0 +1,9 @@
+# API Calls
+
+### Get File Path
+GET http://localhost:3011/menu
+Content-Type: application/json
+
+### Get Menu Items
+GET http://localhost:3011/menu/items
+Content-Type: application/json
