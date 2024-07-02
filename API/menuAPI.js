@@ -2,9 +2,9 @@ import fs from 'fs';
 import yamljs from 'yamljs';
 
 // Set the default YAML file path
-let yamlFile = "./restaurant_menu.yaml"
+// let yamlFile = "./restaurant_menu.yaml"
 
-function menuAPI(filePath = yamlFile) {
+function MenuAPI(filePath) {
     //function to retrieve the file path
     function getFile() {
         return {
@@ -26,7 +26,8 @@ function menuAPI(filePath = yamlFile) {
               message: 'File read successfully',
               data: jsonData
             };
-          } catch (error) {
+        } catch (error) {
+            console.log(error)
             return {
               success: false,
               message: 'Error reading file: ' + error.message
@@ -41,4 +42,4 @@ function menuAPI(filePath = yamlFile) {
     }
 }
 
-export default menuAPI
+export default MenuAPI

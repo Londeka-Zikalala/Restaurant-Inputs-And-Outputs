@@ -1,4 +1,5 @@
 # API Calls
+### Environment: localhost
 
 ### Get File Path
 GET http://localhost:3011/menu

@@ -2,7 +2,7 @@
 restaurant:
   name: The Perfect Plate
   website: 
-  email: [info@perfectplate.com](mailto:info@perfectplate.com)
+  email: info@perfectplate.com
   phone: +27 12 345 2388
 
 menu:
