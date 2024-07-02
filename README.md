@@ -49,3 +49,61 @@ Instructions
 ### Add Support for Different Restaurants
 
 1. Use the client-side location hash and the hashchange event to show different menu contents for different restaurants.
+
+### Converted YAML data: 
+
+# The Perfect Plate
+
+## Contact Information
+- **Email:** info@perfectplate.com
+- **Phone:** +27 12 345 2388
+
+## Menu
+
+### Starters
+- **Bruschetta** - R50.00  
+  Grilled bread with fresh tomatoes and basil
+- **Chicken Wings** - R70.00  
+  Crispy fried chicken wings with a side of tangy sauce
+- **Fried Calamari** - R60.00  
+  Crispy fried squid rings served with a side of lemon aioli
+- **Caprese Salad** - R55.00  
+  Fresh mozzarella, tomato, and basil salad with a balsamic glaze
+- **Meatballs** - R65.00  
+  Homemade meatballs served in a rich tomato sauce
+
+### Mains
+- **Grilled Steak** - R180.00  
+  Tender grilled steak served with a side of roasted vegetables
+- **Pan-Seared Chicken** - R120.00  
+  Juicy chicken breast seared to perfection and served with a side of mashed potatoes
+- **Seafood Pasta** - R150.00  
+  Fresh seafood tossed in a garlic and herb infused pasta
+- **Burgers** - R90.00  
+  Juicy beef or chicken burgers served with a side of fries
+- **Vegetarian Lasagna** - R100.00  
+  Layers of pasta, ricotta, and vegetables baked to perfection
+
+### Drinks
+- **Soft Drink** - R20.00  
+  Various flavors of soft drinks available
+- **Craft Beer** - R40.00  
+  Selection of locally brewed craft beers
+- **Wine** - R60.00  
+  Various red, white, and sparkling wines available
+- **Coffee** - R25.00  
+  Espresso, cappuccino, or latte made from locally roasted beans
+- **Fresh Juice** - R30.00  
+  Various flavors of freshly squeezed juices available
+
+### Desserts
+- **Tiramisu** - R40.00  
+  Ladyfingers soaked in coffee liqueur layered with mascarpone cheese
+- **Cheesecake** - R45.00  
+  Creamy cheesecake with a graham cracker crust and mixed berry compote
+- **Chocolate Lava Cake** - R50.00  
+  Warm chocolate cake oozing with chocolate sauce
+- **Fruit Salad** - R35.00  
+  Seasonal fruit salad served with a dollop of whipped cream
+- **Brownies** - R30.00  
+  Rich and fudgy brownies served with a scoop of vanilla ice cream
