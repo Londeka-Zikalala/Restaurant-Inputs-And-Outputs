@@ -1,5 +1,5 @@
 body {
-    max-width: 1200px;
+    width:100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -7,18 +7,18 @@ body {
 
 .container {
     display: flex;
-    max-width: 95%;
+    max-width: 1200px;
     padding: 5px;
 }
 
 .left-pane {
-    background-image: url('./images/perfect-plate-background-image.jpg');
-    background-size: 100%;
-    width: 25%;
+    background-image: url('./images/background_2.jpg');
+    background-size:cover;
+    width: 400px;
 }
 
 .right-pane {
-    width: 75%;
+    max-width: 600px;
     background-color: orange;
     padding: 20px;
 }
@@ -37,4 +37,48 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
+}
+.menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.instructions {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.instructions h1 {
+    text-align: center;
+    color: #333;
+}
+
+.list-instruction {
+    padding: 10px;
+}
+
+.list-instruction ol {
+    padding-left: 20px;
+}
+
+.list-instruction li {
+    margin-bottom: 10px;
+}
+
+.list-instruction p {
+    margin: 0;
+}
+
+.list-instruction code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.current-files{
+    color:orangered;
 }

@@ -1,26 +1,44 @@
 import fs from 'fs';
 import yamljs from 'yamljs';
+import markdown from 'markdown-it';
 
 // Set the default YAML file path
-// let yamlFile = "./restaurant_menu.yaml"
 
-function MenuAPI(filePath) {
+function MenuAPI() {
     //function to retrieve the file path
-    function getFile() {
-        return {
-            success: true,
-            message: 'File path retrieved successfully',
-            data: filePath
-          };
-
-    } 
+    function getFile(filepath) {
+        try {
+            // let filepath = decodeURIComponent(req.params.filepath);
+            console.log(filepath)
+            return {
+                success: true,
+                message: 'File path retrieved successfully',
+                data: filepath
+            };
+        } catch (error) {
+            return {
+                success: false,
+                message: 'Error retrieving file path: ' + error.message
+            };
+        }
+    }
     
-    function readFile() {
+    
+    function readFile(filepath) {
+        // let filepath = decodeURIComponent(req.params.filepath);
         try {
             // Read the file contents using fs.readFileSync
-            const fileContent = fs.readFileSync(filePath, 'utf8');
-            // Parse the YAML content using yamljs.parse
-            const jsonData = yamljs.parse(fileContent);
+            const fileContent = fs.readFileSync("./" + filepath, 'utf8');
+            let jsonData;
+            // Parse the YAML and MD content using yamljs.parse and mdparse
+            if (filepath.endsWith('.yaml') || filepath.endsWith('.yml')) {
+                jsonData = yamljs.parse(fileContent);
+            } else if (filepath.endsWith('.md')) {
+                const md = new markdown();
+                jsonData = { content: md.render(fileContent) };
+            } else {
+                throw new Error('Unsupported file');
+            }
             return {
               success: true,
               message: 'File read successfully',

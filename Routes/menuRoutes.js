@@ -1,16 +1,30 @@
-function menuRoutes(menuapi) {
-
-        function getMenu(req, res) {
+function MenuRoutes(menuAPI) {
+    function getFilePath(req, res) {
+        let filepath = req.params.filepath;
+        let response = menuAPI.getFile(filepath)
+        res.json(response)
+       
+        
+    }
+    function getMenu(req, res) {
+        const filepath = req.params.filepath;
+       
+            if (!filepath) {
+                res.status(400).json({ error: 'File path is required' });
+                return;
+              }
             try {
+                
+                 
                 // Call the menuAPI function to read the file and parse the JSON data
-                let response = menuapi.readFile();
-    
+                let response = menuAPI.readFile(filepath);
+                
                 if (response.success) {
-                    let jsonData = response.data;
-    
-                    // Extract the menu object from the JSON data
-                    let { menu, restaurant } = jsonData;
-                    console.log(jsonData);
+                    let pageContent = response.data;
+                    if (filepath.endsWith('.yaml') || filepath.endsWith('.yml')) {
+                         // Extract the menu object from the data
+                    let { menu, restaurant } = pageContent;
+                    console.log(pageContent);
     
                     // Get data from the menu object
                     const title = restaurant.name;
@@ -20,8 +34,8 @@ function menuRoutes(menuapi) {
                     const mains = menu.mains;
                     const drinks = menu.drinks;
                     const desserts = menu.desserts;
-    
-                    res.render('index', {
+                    
+                    res.render('yaml', {
                         title,
                         email,
                         contact,
@@ -30,11 +44,19 @@ function menuRoutes(menuapi) {
                         drinks,
                         desserts
                     });
-                } else {
-                    res.status(500).json({
-                        error: response.message
-                    });
+                    }
+                    else if (filepath.endsWith('.md')) {
+                        let markdownContent = pageContent.content;
+                        console.log(pageContent)
+                        res.render('markdown', {content: markdownContent });
+                    }
+                    else {
+                        res.status(500).json({
+                            error: response.message
+                        });
+                    }
                 }
+                
             } catch (error) {
                 console.log(error);
                 // If an error occurs, return a 500 error response with a message
@@ -42,10 +64,19 @@ function menuRoutes(menuapi) {
                     error: 'Failed to retrieve menu items'
                 });
             }
+    }
+    function showIndex(req, res) {
+        try {
+            res.render('index')
+        }catch(error){
+            console.error(error)
         }
+    }
     return {
-        getMenu
+        getMenu,
+        getFilePath,
+        showIndex
     }
 }
 
-export default  menuRoutes
+export default  MenuRoutes

@@ -1,10 +1,9 @@
 # API Calls
 ### Environment: localhost
-
 ### Get File Path
-GET http://localhost:3011/menu
+POST http://localhost:3011/menu/Perfect-plate.yaml
 Content-Type: application/json
 
 ### Get Menu Items
-GET http://localhost:3011/menu/items
+GET http://localhost:3011/menu/Perfect-plate.yaml
 Content-Type: application/json
