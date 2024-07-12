@@ -28,12 +28,14 @@ function MenuAPI() {
         // let filepath = decodeURIComponent(req.params.filepath);
         try {
             // Read the file contents using fs.readFileSync
-            const fileContent = fs.readFileSync("./" + filepath, 'utf8');
+            let fileContent;
             let jsonData;
             // Parse the YAML and MD content using yamljs.parse and mdparse
             if (filepath.endsWith('.yaml') || filepath.endsWith('.yml')) {
+                    fileContent = fs.readFileSync("./yml-files/" + filepath ,'utf8')
                 jsonData = yamljs.parse(fileContent);
             } else if (filepath.endsWith('.md')) {
+                fileContent = fs.readFileSync("./markdown-files/" + filepath , 'utf8')
                 const md = new markdown();
                 jsonData = { content: md.render(fileContent) };
             } else {

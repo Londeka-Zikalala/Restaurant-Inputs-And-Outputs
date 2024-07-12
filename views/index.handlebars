@@ -1,12 +1,30 @@
-  <div class="instructions">
+  <form action="/menu/{{filepath}}" method="GET">
+  "<div class="instructions">
 <h1>Welcome To Restaurant Menus</h1>
+<h3>Discover the best dishes from our curated list of restaurants</h3>
   <div class="list-instruction">
     <ol>
-        <li><p>To view a menu, enter the URL in the format: <code>/menu/YOUR_FILE_PATH</code></p></li>
-       <li><p>Example: <code>/menu/path/to/your/yamlfile.yaml</code></p></li>
-       <li><p class="current-files">Current Files: Perfect-plate.yaml and fast-brunch.md</p></li>
+        <li><p>To view a menu, click on the restaurant name.</p></li>
+       <li><p>Alternatively, enter the restaurant name on the URL in this format: <code>/menu/restaurant-name</code></p></li>
     </ol>
-  </div>
+      </div>
+    <div class="left">
+ <ul>
+  <li><a href="/menu/fast-brunch.md">Fast Brunch</a></li>
+  <li><a href="/menu/urban-eatery.md">Urban Eatery</a></li>
+  <li><a href=".menu/just-fancy.md">Just Fancy</a></li>
+</ul>
+    </div>
+  
+<div class="right">
+<ul>
+  <li><a href="/menu/perfect-plate.yaml">Perfect Plate</a></li>
+  <li><a href="/menu/mzansi-flavors.yaml">Mzanzi Flavors</a></li>
+  <li><a href="/menu/ubuntu-meals.yaml">Ubuntu Meals</a></li>
+</ul>
+
+</div>
    
   </div>
+</form>
   

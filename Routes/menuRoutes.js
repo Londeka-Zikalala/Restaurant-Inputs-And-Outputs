@@ -22,10 +22,7 @@ function MenuRoutes(menuAPI) {
                 if (response.success) {
                     let pageContent = response.data;
                     if (filepath.endsWith('.yaml') || filepath.endsWith('.yml')) {
-                         // Extract the menu object from the data
-                    let { menu, restaurant } = pageContent;
-                    console.log(pageContent);
-    
+                        let { menu, restaurant } = pageContent;
                     // Get data from the menu object
                     const title = restaurant.name;
                     const email = restaurant.email;
@@ -47,7 +44,8 @@ function MenuRoutes(menuAPI) {
                     }
                     else if (filepath.endsWith('.md')) {
                         let markdownContent = pageContent.content;
-                        console.log(pageContent)
+                        // Split the Markdown content by sections
+                
                         res.render('markdown', {content: markdownContent });
                     }
                     else {

@@ -1,0 +1,75 @@
+---
+restaurant:
+  name: Mzansi Flavours
+  website: 
+  email: info@mzansiflavours.co.za
+  phone: +27 31 234 2388
+
+menu:
+  starters:
+    - name: Smoked Snoek Pâté
+      price: 55.00
+      description: Smooth pâté made from smoked snoek served with melba toast
+    - name: Samoosas
+      price: 40.00
+      description: Crispy pastry pockets filled with spicy mince
+    - name: Crayfish Tail
+      price: 75.00
+      description: Grilled crayfish tail with a garlic lemon butter sauce
+    - name: Pap Balls
+      price: 45.00
+      description: Fried balls of pap filled with cheese and bacon
+    - name: Pickled Fish
+      price: 50.00
+      description: Traditional Cape Malay pickled fish served with fresh bread
+
+  mains:
+    - name: Oxtail Potjie
+      price: 160.00
+      description: Slow-cooked oxtail stew made in a cast iron pot, served with dumplings
+    - name: Beef Bobotie
+      price: 120.00
+      description: Spiced minced meat baked with an egg-based topping, served with yellow rice and sambals
+    - name: Durban Curry
+      price: 110.00
+      description: Fiery hot curry with beef or chicken, served with roti
+    - name: Karoo Lamb Chops
+      price: 180.00
+      description: Grilled lamb chops from the Karoo region, served with rosemary potatoes
+    - name: Traditional Fish and Chips
+      price: 90.00
+      description: Freshly caught fish, battered and fried, served with crispy chips
+
+  drinks:
+    - name: Ginger Beer
+      price: 25.00
+      description: Homemade ginger beer with a kick
+    - name: South African Cider
+      price: 35.00
+      description: A variety of local ciders
+    - name: Pinotage Rose
+      price: 60.00
+      description: Refreshing rose wine made from the Pinotage grape
+    - name: Mampoer
+      price: 50.00
+      description: Strong fruit-based spirit
+    - name: Fresh Coconut Water
+      price: 30.00
+      description: Freshly cracked coconuts served with a straw
+
+  desserts:
+    - name: Koeksisters
+      price: 30.00
+      description: Syrup-soaked braided doughnuts
+    - name: Jan Ellis Pudding
+      price: 50.00
+      description: Baked pudding with apricot jam, served with custard
+    - name: Hertzoggie
+      price: 25.00
+      description: Tartlets filled with apricot jam and topped with coconut meringue
+    - name: Cape Brandy Pudding
+      price: 55.00
+      description: Rich pudding made with dates and brandy, served with cream
+    - name: Melktert
+      price: 35.00
+      description: Classic South African milk tart with a cinnamon dusting

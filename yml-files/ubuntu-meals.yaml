@@ -1,0 +1,75 @@
+---
+restaurant:
+  name: Ubuntu Meals
+  website: 
+  email: info@ubuntumeals.co.za
+  phone: +27 11 456 2388
+
+menu:
+  starters:
+    - name: Bobotie Spring Rolls
+      price: 45.00
+      description: Spring rolls filled with spiced minced meat and served with a chutney dipping sauce
+    - name: Biltong Salad
+      price: 55.00
+      description: Fresh greens topped with slices of biltong, cherry tomatoes, and feta cheese
+    - name: Boerewors Bites
+      price: 60.00
+      description: Grilled mini boerewors served with a spicy tomato relish
+    - name: Chakalaka Dip
+      price: 50.00
+      description: Spicy vegetable relish served with crispy breadsticks
+    - name: Peri-Peri Chicken Livers
+      price: 65.00
+      description: Spicy chicken livers sautéed in a peri-peri sauce served with fresh bread
+
+  mains:
+    - name: Braai Platter
+      price: 200.00
+      description: A selection of grilled meats including lamb chops, boerewors, and chicken wings served with pap and chakalaka
+    - name: Cape Malay Curry
+      price: 140.00
+      description: Mildly spiced curry with tender pieces of lamb, served with basmati rice and sambals
+    - name: Bunny Chow
+      price: 90.00
+      description: Half loaf of bread hollowed out and filled with a spicy beef curry
+    - name: Sosaties
+      price: 130.00
+      description: Skewered and grilled marinated lamb and apricots served with yellow rice
+    - name: Veggie Potjie
+      price: 110.00
+      description: Slow-cooked vegetable stew with a variety of seasonal vegetables and herbs
+
+  drinks:
+    - name: Rooibos Iced Tea
+      price: 25.00
+      description: Refreshing iced tea made from South African rooibos leaves
+    - name: Amarula Cream
+      price: 45.00
+      description: Creamy liqueur made from the fruit of the marula tree
+    - name: Castle Lager
+      price: 35.00
+      description: Popular South African lager beer
+    - name: Pinotage Wine
+      price: 70.00
+      description: A selection of red wines made from the Pinotage grape, unique to South Africa
+    - name: Fresh Fruit Smoothie
+      price: 30.00
+      description: Smoothies made from a blend of local fruits
+
+  desserts:
+    - name: Malva Pudding
+      price: 50.00
+      description: Traditional South African pudding served with a warm custard
+    - name: Milk Tart
+      price: 40.00
+      description: Creamy tart with a cinnamon dusting
+    - name: Koeksisters
+      price: 30.00
+      description: Syrup-soaked braided doughnuts
+    - name: Peppermint Crisp Tart
+      price: 45.00
+      description: Layers of whipped cream, caramel, and peppermint crisp chocolate
+    - name: Amarula Ice Cream
+      price: 35.00
+      description: Vanilla ice cream with a swirl of Amarula liqueur

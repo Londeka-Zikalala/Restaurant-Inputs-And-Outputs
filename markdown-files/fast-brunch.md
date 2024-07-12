@@ -21,3 +21,4 @@
 - **Wine**: Various red, white, and sparkling wines available - 60.00
 - **Coffee**: Espresso, cappuccino, or latte made from locally roasted beans - 25.00
 - **Fresh Juice**: Various flavors of freshly squeezed juices available - 30.00
+---

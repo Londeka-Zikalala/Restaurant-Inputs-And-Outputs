@@ -2,43 +2,45 @@
 </div>
 <div class="right-pane">
 <h1>{{title}}</h1>
-  <ul>
-    {{#each starters}}
-    <div class="menu-items">
-        <li class="left">{{name}} </li>
+
+ <div class="menu-items">
+  <h2>Starters</h2>
+<ul>
+         {{#each starters}}
+         <li class="left">{{name}} </li>
       <li class="right">{{price}}</li>
+       {{/each}}
+      </ul>
     </div>
-      
-    {{/each}}
-  </ul>
-  <ul>
-    {{#each mains}}
     <div class="menu-items">
-        <li class="left">{{name}}</li>
+  <h2>Mains</h2>
+<ul>
+         {{#each mains}}
+         <li class="left">{{name}} </li>
       <li class="right">{{price}}</li>
+       {{/each}}
+      </ul>
     </div>
-      
-    {{/each}}
-  </ul>
-  <ul>
-    {{#each drinks}}
+
     <div class="menu-items">
-         <li class="left">{{name}}</li>
+  <h2>Drinks</h2>
+<ul>
+         {{#each drinks}}
+         <li class="left">{{name}} </li>
       <li class="right">{{price}}</li>
+       {{/each}}
+      </ul>
     </div>
-     
-    {{/each}}
-  </ul>
-  
-  <ul>
-    {{#each desserts}}
-    <div class="menu-items">
- <li class="left">{{name}}</li>
+
+     <div class="menu-items">
+  <h2>Desserts</h2>
+<ul>
+         {{#each desserts}}
+         <li class="left">{{name}} </li>
       <li class="right">{{price}}</li>
+       {{/each}}
+      </ul>
     </div>
-     
-    {{/each}}
-  </ul>
 </div>
 
 
